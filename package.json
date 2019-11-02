@@ -1,0 +1,26 @@
+{
+  "name": "boombem",
+  "version": "0.0.1",
+  "description": "Tiny BEM class name generator",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^24.0.21",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [
+    "bem",
+    "class",
+    "classname",
+    "react"
+  ],
+  "author": "Roman Ditchuk",
+  "license": "ISC"
+}
