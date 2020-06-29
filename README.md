@@ -14,3 +14,30 @@ console.log( cn('Element', {
     e: '1'
 })); // Block__Element Block__Element--a Block__Element--d Block__Element--e
 ```
+
+How to use with React
+=====================
+
+```jsx
+import React from 'react';
+import bem from 'boombem';
+
+const cn = bem('MyComponent');
+
+export const MyComponent = () => {
+    return (
+        <div className={cn()}>
+            <div className={cn('item')}/>
+            <div className={cn('item', {active: true})}/>
+        </div>
+    );
+};
+```
+
+The result is:
+```
+<div class="MyComponent">
+    <div class="MyComponent__item"></div>
+    <div class="MyComponent__item MyComponent__item--active"></div>
+</div>
+```
